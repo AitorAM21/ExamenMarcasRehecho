@@ -18,7 +18,7 @@
 
                 <% for (var i = 0; i < movies.length; i++) { %>
                     <tr>
-                        <div class="card">
+                        <a class="card" href="/movies/<%= movies[i].id %> " >
                             <!-- Cover -->
                             <div class="card__cover">
                                 <td><%= movies[i].poster_path %></td>
@@ -30,7 +30,7 @@
                                 
                             </div>
                             <td><%= movies[i].id %></td>
-                        </div>
+                        </a>
                     </tr>
                 <% } %>
                 
